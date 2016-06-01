@@ -19,7 +19,7 @@
     "autoload": {
         "classmap": [
             "database",
-            "/vendor/twilio"
+            "vendor/twilio"
         ],
         "psr-4": {
             "App\\": "app/"
