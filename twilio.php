@@ -1,4 +1,4 @@
-<?php include "./controllers/submit.php" ?>
+<?php include "./controllers/SubmitController.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
