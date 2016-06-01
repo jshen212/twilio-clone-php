@@ -1,9 +1,8 @@
-<?php include "../app/Http/Controllers/Submit/SubmitController.php" ?>
+<?php include "../app/Http/Controllers/SubmitController.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/master.css">
@@ -12,7 +11,8 @@
   <div class="container">
     <h1>TWILIO CLONE</h1>
     <div>
-      <form id="smsForm" method="post">
+      <form id="smsForm" method="post" >
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
           <label for="phone">Recipient Phone</label>
           <input type="text" name="phone" placeholder="Enter phone number here" class="form-control">

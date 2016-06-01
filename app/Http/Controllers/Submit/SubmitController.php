@@ -1,8 +1,9 @@
 <?php
+namespace App\Http\Controllers\Submit;
 
 if(isset($_POST['submit'])) {
   // using external twilio-php module
-  require('../../../../vendor/twilio/sdk/Services/Twilio.php');
+  include 'vendor/autoload.php';
 
   function newMessage() {
     // sanitizing phone input
