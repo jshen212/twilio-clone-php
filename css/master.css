@@ -1,0 +1,15 @@
+.container {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin: 0 auto;
+  min-width: 600px;
+}
+
+textarea {
+  min-height: 300px;
+}
