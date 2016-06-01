@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Services_Twilio;
 
-
 class SubmitController extends Controller
 {
   public function newMessage() {
@@ -28,7 +27,7 @@ class SubmitController extends Controller
       );
     }
   }
-  newMessage();
-  header("Location: twilio.php");
+  header("Location: twilio-clone.blade.php");
 }
 }
+?>

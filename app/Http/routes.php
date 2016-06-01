@@ -10,10 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-// Route::group(['middleware' => ['web']], function () {
+
     Route::get('/', function () {
       return view('twilio-clone');
     });
 
     Route::post('/', 'SubmitController@newMessage');
-// });
